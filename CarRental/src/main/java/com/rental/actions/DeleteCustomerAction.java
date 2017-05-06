@@ -15,7 +15,7 @@ public class DeleteCustomerAction extends DeleteAction {
 	public String execute() {
 		try {
 			if(RentDatabase.getInstance().customerHaveSomething(param[3]))
-				return "Klient " + param[3] + " posiada wypo¿yczony samochód.";
+				return "Klient " + param[3] + " posiada wypozyczony samochod.";
 			db.deleteById(id);
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -28,7 +28,7 @@ public class RentBackPress  extends AbstractPress {
 	@Override
 	protected boolean doExecute(IListElement elem, MainPanel mainPanel) {
 		if(elem.getParam()[5].equals("1")) return true;
-		mainPanel.setInfoText("To wypo¿yczenie zosta³o ju¿ zakoñczone");
+		mainPanel.setInfoText("To wypozyczenie zostalo juz zakonczone");
 		return false;
 	}
 }

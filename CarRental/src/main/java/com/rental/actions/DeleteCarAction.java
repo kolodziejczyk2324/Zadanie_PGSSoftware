@@ -15,7 +15,7 @@ public class DeleteCarAction extends DeleteAction {
 	public String execute() {
 		try {
 			if(RentDatabase.getInstance().someCustomerHaveThisCar(id))
-				return "Samochod o indeksie " + id + " jest aktualnie wypo¿yczony.";
+				return "Samochod o indeksie " + id + " jest aktualnie wypozyczony.";
 			db.deleteById(id);
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -1,7 +1,5 @@
 package com.rental.actions.actionList;
 
-import com.rental.actions.MyAbstractAction;
-
 public abstract class AbstractList<T> {
 
 	protected class Node {
